@@ -7,7 +7,7 @@ TrackDSA is an ultimate platform designed to help you crack your software engine
 ## Tech Stack
  #### Build with MERN Stack, Bootstrap classes and firebase 
 ## Deployed on
-#### [TrackDSA.web.app](https://TrackDSA.web.app/)
+https://track-dsa.web.app/
 ## Getting Started
 ## Features
 
