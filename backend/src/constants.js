@@ -1,1 +1,1 @@
-export const DB_NAME = "TrackDSA"
+export const DB_NAME = "algocraft"
