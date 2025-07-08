@@ -1,0 +1,323 @@
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    content: none;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.main-container {
+    padding: 60px 100px 60px 100px;
+}
+
+.sidebar {
+    background-color: var(--secondaryColor);
+    width: fit-content;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.sheet {
+    text-decoration: none;
+    border: 0.5px solid var(--mainTextColor);
+    background-color: var(--itemColor);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    width: 20%;
+    text-align: center;
+    text-overflow: ellipsis;
+
+}
+
+
+
+.options {
+    background: var(--itemColor);
+    /* border: none; */
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    min-width: 150px;
+}
+
+
+
+.sheet:active {
+    transform: scale(0.97);
+}
+
+.selected {
+    background-color: var(--secondaryColor);
+}
+
+.sheet:hover {
+    background-color: var(--itemColor);
+}
+
+.dropdown-menu {
+    background-color: var(--itemColor);
+    color: var(--mainTextColor);
+
+}
+
+.progress{
+    --bs-progress-bg:var(--secondaryColor);
+}
+.number {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 5px;
+}
+text{
+    fill: var(--mainTextColor) !important  ;
+}
+
+
+.title {
+    margin-left: 10px;
+    font-size: larger;
+    font-style: italic;
+}
+
+.tags {
+    font-size: x-small !important;
+    font-weight: 100;
+    font-style: normal;
+    border: 1px solid;
+    border-radius: 16px;
+    text-align: center;
+    margin: 2px;
+}
+
+.username {
+    font-size: xx-small;
+    margin-right: 2px;
+}
+
+.thread-title {
+    text-decoration: none;
+}
+
+.thread-title:hover {
+    opacity: 0.6;
+}
+
+.pfp {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp img {
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+    /* Ensures the image doesn't exceed the container width */
+    max-height: 100%;
+    /* Ensures the image doesn't exceed the container height */
+    border-radius: 50%;
+    /* Maintain border radius for circular shape */
+}
+
+
+.dropdown-item:hover {
+    background-color: var(--secondaryColor);
+    border-radius: 8px;
+}
+
+
+.table-list {
+    border: 1px solid gray;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.btn-list {
+    background: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.question {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.row {
+    margin-left: 0 !important;
+}
+
+.table-list .row:nth-child(odd) {
+    background-color: var(--itemColor);
+    /* Change this to your desired background color */
+}
+
+/* Apply background color to even-numbered rows within .table-list */
+.table-list .row:nth-child(even) {
+    background-color: var(--secondaryColor);
+    /* Change this to your desired background color */
+}
+
+.completed {
+    background-color: var(--secondaryColor);
+    overflow: hidden;
+}
+
+.searchBox {
+    display: flex;
+    max-width: 30%;
+    margin: 15px 0px 15px 0px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: var(--secondaryColor);
+    border-radius: 50px;
+    position: relative;
+}
+
+.right-container {
+    width: 30%;
+    padding: 20px;
+}
+
+textarea {
+    border-radius: 8px;
+    background-color: var(--secondaryColor);
+    color: var(--mainTextColor);
+}
+
+.searchButton {
+    color: white;
+    position: absolute;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--mainTextColor);
+    font-size: 15px;
+    padding: 15px 30px 15px 20px;
+}
+
+
+/*hover effect*/
+.searchButton:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+}
+
+/*button pressing effect*/
+.searchButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.card {
+    max-width: 18rem;
+}
+
+
+.thread,
+.daddy {
+    background-color: var(--itemColor);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px #00000014, 0px 4px 8px #00000014, 0px 6px 12px #00000014;
+
+}
+
+.overflow-guard,
+.margin {
+    padding-top: 10px !important;
+}
+
+.daddy {
+    width: 100%;
+}
+
+.editor {
+    width: 70%;
+}
+
+.output-box {
+    height: 30%;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: var(--secondaryColor);
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.thread-header {
+    border-bottom: 1px solid gray;
+}
+
+
+.btn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px 8px 8px 0px;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(33, 0, 85);
+    text-decoration: none;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.btn2:hover {
+    background: rgb(193, 228, 248);
+
+}
+
+.btn2:active {
+    transform: scale(0.97);
+}
+.pre-container {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+
+.offcanvas-start {
+    width: 20% !important;
+    background-color: var(--itemColor);
+}
+
+.btn-close {
+    --bs-btn-close-bg: none;
+    margin-right: 0 !important;
+}
+

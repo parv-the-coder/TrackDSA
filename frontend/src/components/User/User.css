@@ -1,0 +1,241 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.leftpart-auth {
+    background: linear-gradient(-45deg, #E7F3FF, #FDF1DD, black, #00D0DB);
+    width: 50vw;
+    height: 100vh;
+    /* border-radius: 10px; */
+    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: authEffect 15s ease infinite;
+}
+
+@keyframes authEffect {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    /* Adjust the width and height as needed */
+    height: 80px;
+    border-radius: 50%;
+    /* Make it a circle */
+    overflow: hidden;
+    background-color: #00D0DB;
+    /* Ensure content doesn't overflow */
+}
+
+.rightpart-auth {
+    background-color: var(--mainBgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    color: var(--mainTextColor);
+    gap: 10px;
+    background-color: transparent;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form button {
+    align-self: flex-end;
+}
+
+.flex-column>label {
+    color: #151717;
+    font-weight: 600;
+}
+
+.inputForm {
+    color: var(--mainTextColor);
+
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.input {
+    color: var(--mainTextColor);
+
+    background-color: transparent;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.flex-row>div>label {
+    font-size: 14px;
+    color: var(--mainTextColor);
+    font-weight: 400;
+}
+label{
+    color: var(--mainTextColor) !important;
+
+}
+
+.span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #2d79f3 !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button-submit {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    background-color: #252727;
+}
+
+.p {
+    text-align: center;
+    color: var(--mainTextColor);
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--mainTextColor) !important;
+}
+.btn:hover {
+    border: 1px solid #2d79f3;
+
+}
+
+.divider {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: #FFFF00;
+    height: 1px;
+}
+.rounded-square-pfp {
+    border-radius: 16px;    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.rounded-square-pfp img {
+
+    max-width: 100%;
+    /* transform: translate(-50%, -50%);  */
+    /* Ensures the image doesn't exceed the container width */
+    max-height: 100%;
+    /* Ensures the image doesn't exceed the container height */
+    border-radius: 16px;
+    /* background-size: auto; */
+}
+
+.icon-container {
+    position: relative;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .btn-list:hover .edit-icon {
+    opacity: 1;
+  }
+  
