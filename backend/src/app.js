@@ -7,7 +7,7 @@ const app = express();
 app.use(cookieParser());
 app.use(
     cors({
-        origin: [process.env.CORS_ORIGIN,"http://localhost:3000"],
+        origin: [process.env.CORS_ORIGIN,"http://localhost:3000","https://track-dsa.web.app/","https://track-dsa.web.app"],
         credentials: true,
     })
 );
